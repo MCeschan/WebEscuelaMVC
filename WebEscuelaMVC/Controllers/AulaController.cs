@@ -99,7 +99,7 @@ namespace WebEscuelaMVC.Controllers
             }
             else
             {
-                return View("detalle", aula);
+                return View("Details", aula);
             }
         }
 

@@ -10,12 +10,16 @@
     <h2>@Model.Numero</h2>
     <p> ¿Esta seguro de que desea eliminar esta aula?</p>
 
-    @using (Html.BeginForm("Delete", "Aula", FormMethod.Post)) { }
+    @using (Html.BeginForm("Delete", "Aula", FormMethod.Post))
+    {
         <div>
-         <span>@Html.DisplayNameFor(m=>m.Estado)</span>
-        <span>@Html.DisplayFor(m=>m.Estado)</span>
-    </div>        
-    <input type="submit" action="Delete" />
-    @Html.ActionLink("Volver a index","Index", "Aula")
+            <span>@Html.DisplayNameFor(m=>m.Estado)</span>
+            <span>@Html.DisplayFor(m=>m.Estado)</span>
+        </div>
+
+        <input type="submit" action="Delete" />
+        @Html.ActionLink("Volver a index","Index", "Aula")
+    }
+
 </body>
 </html>

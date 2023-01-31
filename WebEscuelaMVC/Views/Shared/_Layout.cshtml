@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/main.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="header">
+        <h1>Escuela de aviación Interamericana</h1>
+        <p>El mejor lugar para aprender</p>
+    </div>
+
+    <div class="main">
+
+        <div id="menu"> 
+            @Html.ActionLink("Home","Index","Home")
+            @Html.ActionLink("Lista de aulas","Index","Aula")
+        </div>
+
+        <div class="body">
+            @RenderBody()
+        </div>
+    </div>
+    <div id="footer">
+        <p>Todos los derechos reservados. &copy;2023. | escuela@escuela.com</p>
+    </div>
+</body>
+</html>
